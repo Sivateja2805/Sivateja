@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Support - Online Casino</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Online Casino</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="support.html">Support</a>
+      <a href="wallet.html">Wallet</a>
+    </div>
+  </header>
+
+  <div class="support-container">
+    <h2>Need Help? We’re Here to Assist You!</h2>
+
+    <div class="faq-section">
+      <h3>Frequently Asked Questions (FAQ)</h3>
+
+      <div class="faq-item">
+        <h4>How can I reset my password?</h4>
+        <p>If you've forgotten your password, click on the "Forgot Password" link on the login page and follow the instructions to reset it.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>How do I deposit funds into my wallet?</h4>
+        <p>You can add funds to your wallet by visiting the "Wallet" page and selecting the "Add Funds" option. Choose your preferred payment method to complete the transaction.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>How do I contact customer support?</h4>
+        <p>You can use the contact form below to send us your questions. You may also reach us at support@onlinecasino.com for further assistance.</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Contact Us</h3>
+      <form id="contactForm" onsubmit="return handleContactForm(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Describe your issue or question..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="live-chat">
+      <h3>Live Chat</h3>
+      <button onclick="startLiveChat()">Start Live Chat</button>
+      <div id="chat-box">
+        <p><strong>Live Support: </strong>How can we assist you today?</p>
+        <textarea id="chat-input" placeholder="Type your message..."></textarea>
+        <button onclick="sendChatMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
